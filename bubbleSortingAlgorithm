@@ -29,8 +29,8 @@ namespace bubbleSortingAlgorithm
             }
             foreach(var i in bArray)
             {
-                Console.WriteLine(string.Format("{0:N6}", i)); //prints out array
-            }
+                Console.WriteLine(string.Format("{0:N6}", i)); //print out array of result (1, 2, 4, 5, 6, 8) 
+            } 
 
         }
         static void Main(string[] args)
