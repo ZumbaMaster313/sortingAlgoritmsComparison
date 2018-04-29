@@ -8,6 +8,7 @@ namespace bubbleSortingAlgorithm
 {
     class Program
     {
+    //Slowest Algorithms
         static void bubbleSorter(int[] bArray)
         {
             int numberHolder = 0;
