@@ -67,6 +67,10 @@ namespace mergeSortingAlgorithm
                         }
                     }
                 }
+            foreach(var i in result)
+            {
+                Console.WriteLine(string.Format("{0:N6}", i));
+            }
             return result.ToArray();
         }
 
