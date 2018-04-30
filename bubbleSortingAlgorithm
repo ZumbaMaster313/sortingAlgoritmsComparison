@@ -12,31 +12,37 @@ namespace bubbleSortingAlgorithm
         static void bubbleSorter(int[] bArray)
         {
             int numberHolder = 0;
-            for (int i = 0; i < bArray.Length; i++) //increments through passes of a loop
+            for (int i = 0; i < bArray.Length; i++) 
+            //increments through passes of a loop
             {
-                for (int j = 0; j < bArray.Length; j++) // the sorting loop foreach pass
+                for (int j = 0; j < bArray.Length; j++) 
+                // the sorting loop foreach pass
                 {
                     if(bArray[i] < bArray[j])
                     {
-                        numberHolder = bArray[i]; //puts the greater number into a place holder
+                        numberHolder = bArray[i]; 
+                        //puts the greater number into a place holder
 
                         bArray[i] = bArray[j]; 
 
-                        bArray[j] = numberHolder; //swaps the greater number into the place of smaller
+                        bArray[j] = numberHolder; 
+                        //swaps the greater number into the place of smaller
                     }
           
                 }
             }
             foreach(var i in bArray)
             {
-                Console.WriteLine(string.Format("{0:N6}", i)); //print out array of result (1, 2, 4, 5, 6, 8) 
+                Console.WriteLine(string.Format("{0:N6}", i)); 
+                //print out array of result (1, 2, 4, 5, 6, 8) 
             } 
 
         }
         static void Main(string[] args)
         {
             int[] bubbleArray = new int[6] { 5, 2, 4, 1, 8, 6 };
-            bubbleSorter(bubbleArray); // sends the array to the method above
+            bubbleSorter(bubbleArray); 
+            // sends the array to the method above
         }
     }
 }
