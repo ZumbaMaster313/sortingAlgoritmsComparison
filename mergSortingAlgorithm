@@ -1,1 +1,81 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace mergeSortingAlgorithm
+{
+    class Program
+    {
+
+        static int[] mergeSort(int[] mergeArray, int index)
+        {
+            List<int> result = new List<int> (mergeArray.Length); 
+         
+            if(mergeArray.Length < 2)
+            {
+                return mergeArray; //Will denie any array less than 2
+            }
+            int mid = mergeArray.Length / 2; // Gets the value of splitting the array in half
+
+            var left = mergeSort(mergeArray, mid); //Makes a left subarray recursivly
+            var right = mergeSort(mergeArray, mergeArray.Length - mid);// makes a right sub array recursivly
+
+            int[] y = left.ToArray();
+            int[] z = right.ToArray();
+            
+            while(y.Length > 0 || z.Length > 0) //creates a loop for the recursion above
+            {
+                if (y.Length > 0 && z.Length > 0)
+                {
+                    if (y[0] > z[0])//compares 2 values 
+                    {
+                        result.Add(z[0]);
+                        var popList = new List<int>(z);
+                        popList.RemoveAt(0);
+                        return popList.ToArray();
+                        //Takes out value that is less and replaces it
+                    }
+                    else
+                    {
+                        result.Add(y[0]);
+                        var popList = new List<int>(y);
+                        popList.RemoveAt(0);
+                        return popList.ToArray();
+                    }
+                }
+                    else if (z.Length > 0)
+                    {
+                        for (int i = 0; i < z.Length; i++)
+                        {
+                            result.Add(z[i]);
+                            var popList = new List<int>(z);
+                            popList.RemoveAt(0);
+                            return popList.ToArray();
+                        //does the same as the if statements as above but in a single loop till the function is done
+                        }
+                    }
+                    else
+                    {
+                        for(int i = 0; i < y.Length; i++)
+                        {
+                            result.Add(y[i]);
+                            var popList = new List<int>(y);
+                            popList.RemoveAt(0);
+                            return popList.ToArray();
+                        }
+                    }
+                }
+            return result.ToArray();
+        }
+
+        static void Main(string[] args)
+        {
+            int[] mergeArray = new int[6] { 4, 3, 7, 1, 8, 6 };//array that it will sort
+            mergeSort(mergeArray, 0); //calls the method
+           
+        } 
+    }
+}
 
