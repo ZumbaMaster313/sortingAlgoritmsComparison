@@ -15,17 +15,22 @@ namespace mergeSortingAlgorithm
          
             if(mergeArray.Length < 2)
             {
-                return mergeArray; //Will denie any array less than 2
+                return mergeArray; 
+                //Will denie any array less than 2
             }
-            int mid = mergeArray.Length / 2; // Gets the value of splitting the array in half
+            int mid = mergeArray.Length / 2; 
+            // Gets the value of splitting the array in half
 
-            var left = mergeSort(mergeArray, mid); //Makes a left subarray recursivly
-            var right = mergeSort(mergeArray, mergeArray.Length - mid);// makes a right sub array recursivly
+            var left = mergeSort(mergeArray, mid); 
+            //Makes a left subarray recursivly
+            var right = mergeSort(mergeArray, mergeArray.Length - mid);
+            // makes a right sub array recursivly
 
             int[] y = left.ToArray();
             int[] z = right.ToArray();
             
-            while(y.Length > 0 || z.Length > 0) //creates a loop for the recursion above
+            while(y.Length > 0 || z.Length > 0) 
+            //creates a loop for the recursion above
             {
                 if (y.Length > 0 && z.Length > 0)
                 {
