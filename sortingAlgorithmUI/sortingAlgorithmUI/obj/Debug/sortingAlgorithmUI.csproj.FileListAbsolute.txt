@@ -1,0 +1,9 @@
+c:\users\iseba\onedrive\documents\visual studio 2015\Projects\sortingAlgorithmUI\sortingAlgorithmUI\bin\Debug\sortingAlgorithmUI.exe.config
+c:\users\iseba\onedrive\documents\visual studio 2015\Projects\sortingAlgorithmUI\sortingAlgorithmUI\bin\Debug\sortingAlgorithmUI.exe
+c:\users\iseba\onedrive\documents\visual studio 2015\Projects\sortingAlgorithmUI\sortingAlgorithmUI\bin\Debug\sortingAlgorithmUI.pdb
+c:\users\iseba\onedrive\documents\visual studio 2015\Projects\sortingAlgorithmUI\sortingAlgorithmUI\obj\Debug\sortingAlgorithmUI.csprojResolveAssemblyReference.cache
+c:\users\iseba\onedrive\documents\visual studio 2015\Projects\sortingAlgorithmUI\sortingAlgorithmUI\obj\Debug\sortingAlgorithmUI.uiTemplate.resources
+c:\users\iseba\onedrive\documents\visual studio 2015\Projects\sortingAlgorithmUI\sortingAlgorithmUI\obj\Debug\sortingAlgorithmUI.Properties.Resources.resources
+c:\users\iseba\onedrive\documents\visual studio 2015\Projects\sortingAlgorithmUI\sortingAlgorithmUI\obj\Debug\sortingAlgorithmUI.csproj.GenerateResource.Cache
+c:\users\iseba\onedrive\documents\visual studio 2015\Projects\sortingAlgorithmUI\sortingAlgorithmUI\obj\Debug\sortingAlgorithmUI.exe
+c:\users\iseba\onedrive\documents\visual studio 2015\Projects\sortingAlgorithmUI\sortingAlgorithmUI\obj\Debug\sortingAlgorithmUI.pdb
