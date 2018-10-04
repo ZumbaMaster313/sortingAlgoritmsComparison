@@ -16,7 +16,7 @@ namespace mergeSortingAlgorithm
             if(mergeArray.Length < 2)
             {
                 return mergeArray; 
-                //Will denie any array less than 2
+                //Will deny any array less than 2
             }
             int mid = mergeArray.Length / 2; 
             // Gets the value of splitting the array in half
